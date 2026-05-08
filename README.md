@@ -5,7 +5,7 @@ AASPI (Attribute Assisted Seismic Processing & Interpretation)
 University of Oklahoma, School of Geosciences  
 [aaspi.ou.edu](https://www.ou.edu/mcee/labs/aaspi)
 
-🌐 **[Launch the tool](https://hbedle-subsurface.github.io/seismic-ml-assessment/)**
+**[Launch the tool](https://hbedle-subsurface.github.io/seismic-ml-assessment/)**
 
 ---
 
@@ -21,13 +21,13 @@ At the end you get two uncertainty matrices and a prioritized list of specific a
 
 ## Why this exists
 
-When a software platform produces a seismic facies map using machine learning, there is a very human temptation to look at the output and move on. The colors are convincing. The patterns look like geology. The software is from a reputable vendor.
+When a software platform produces a seismic facies map using machine learning, there is a very human temptation to look at the output and move on. The colors are convincing. The patterns look like geology. The software is from a reputable vendor...
 
-But here is what that workflow often skips: the algorithm found exactly what you gave it. If you gave it acquisition footprint, it clustered your footprint. If you gave it unnormalized attributes, the result reflects data scaling, not geology. If you skipped despiking, one bad trace pulled a cluster center somewhere it should not be. If you ran it on a full 3D volume when you cared about a 50ms reservoir window, the method spent most of its effort telling the water column from the basement.
+But many folks forget that the algorithm found exactly what you gave it. If you gave it acquisition footprint, it clustered your footprint. If you gave it unnormalized attributes, the result reflects data scaling, not geology. If you skipped despiking, one bad trace pulled a cluster center somewhere it should not be. If you ran it on a full 3D volume when you cared about a 50ms reservoir window, the method spent most of its effort telling the water column from the basement.
 
 None of these are ML problems. They are workflow problems. And they are extremely common - in student work, in industry practice, and in published research.
 
-This tool is designed to surface them before they become decisions.
+This tool is designed to surface those issues before they become decisions!
 
 ---
 
@@ -45,7 +45,7 @@ The assessment has 7 sections:
 
 **Methods covered:** k-means, PCA, ICA, GMM, SOM, GTM, and other unsupervised classification methods.
 
-Supervised methods (PNN, RFC, CNN) will be added in a future version.
+Supervised methods (PNN, SAM, CNN) will be added in a future version.
 
 ---
 
@@ -56,13 +56,13 @@ Supervised methods (PNN, RFC, CNN) will be added in a future version.
 - **Researchers** who want a framework for critically evaluating ML-based seismic interpretations - their own or others'
 - **Anyone** who has ever run a seismic ML workflow and thought "this looks great" without being quite sure why
 
-No ML expertise is required. Every question is written in plain geoscience language. You do not need to know what a covariance matrix is to use this tool - though you might know by the end of it.
+No ML expertise is required. Every question is written in plain geoscience language. You do not need to know what a covariance matrix is to use this tool - though you might know by the end of it :)
 
 ---
 
 ## How to use it
 
-Visit the link above. The tool runs entirely in your browser - nothing is stored or transmitted anywhere. Your answers stay on your machine.
+Visit the link above. The tool runs entirely in your browser - nothing is stored or transmitted anywhere. Your answers stay on your machine, and you can save a pdf at the end.
 
 Work through the sections. Answer honestly. "I don't know" is a valid answer and scores as the highest uncertainty level - not as a punishment, but because not knowing is a real source of uncertainty in your analysis.
 
@@ -71,7 +71,7 @@ At the end you receive:
 - **A section-by-section uncertainty score**
 - **A prioritized list of specific actions** to address the gaps the assessment found
 
-The whole thing takes about 15-20 minutes. You can save or print the results as a PDF.
+The whole thing takes about 15-20 minutes.  
 
 ---
 
@@ -97,7 +97,7 @@ Version 1.0 covers unsupervised methods and dimension reduction. Planned additio
 If you have used this tool and found a question that doesn't fit your workflow, a failure mode it doesn't cover, or have suggestions for what to add - please get in touch. Feedback from practitioners and students is how this tool gets better.
 
 **Contact:** [hbedle@ou.edu](mailto:hbedle@ou.edu)  
-Feedback, suggestions, and war stories all welcome.
+Feedback, suggestions, and stories all welcome.
 
 ---
 
