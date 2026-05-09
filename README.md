@@ -8,7 +8,8 @@ University of Oklahoma, School of Geosciences
 **[Launch the tool](https://hbedle-subsurface.github.io/seismic_ml_assessment/)**
 
 ---
-This is Version 1.0 in active testing. Please email hbedle@ou.edu with any questions that felt unclear, options that didn't fit your situation, or steps your workflow includes that the tool didn't ask about - THANKS!
+**This is Version 1.0 in active testing. Please email hbedle@ou.edu with any questions that felt unclear, options that didn't fit your situation, or steps your workflow includes that the tool didn't ask about - THANKS!**
+
 ---
 
 ## The short version
