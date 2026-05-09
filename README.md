@@ -1,6 +1,6 @@
 # Seismic Multi-Attribute ML Uncertainty Assessment
 
-**Developed by [Dr. Heather Bedle](mailto:hbedle@ou.edu)**  
+**Developed by [Dr. Heather Bedle](mailto:hbedle@ou.edu), Dr. David Lubo-Robles, Dr. April Moreno-Ward, Hilmi Putra**  
 AASPI (Attribute Assisted Seismic Processing & Interpretation)  
 University of Oklahoma, School of Geosciences  
 [aaspi.ou.edu](https://www.ou.edu/mcee/labs/aaspi)
