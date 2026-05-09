@@ -51,7 +51,6 @@ Supervised methods (PNN, SAM, CNN) will be added in a future version.
 
 ## Who it is for
 
-- **AASPI students** learning multi-attribute seismic ML workflows for the first time
 - **Geoscientists in industry** who use ML-enabled interpretation software and want a structured way to evaluate their results before presenting them
 - **Researchers** who want a framework for critically evaluating ML-based seismic interpretations - their own or others'
 - **Anyone** who has ever run a seismic ML workflow and thought "this looks great" without being quite sure why
@@ -68,7 +67,7 @@ Work through the sections. Answer honestly. "I don't know" is a valid answer and
 
 At the end you receive:
 - **Two 2x2 uncertainty matrices** - one for data and attribute quality, one for method rigor and geologic validation
-- **A section-by-section uncertainty score**
+- **Section-by-section summary cards**
 - **A prioritized list of specific actions** to address the gaps the assessment found
 
 The whole thing takes about 15-20 minutes.  
@@ -81,7 +80,7 @@ This tool was built alongside the AASPI software suite developed at the Universi
 
 The tool is designed to be useful regardless of what software you are using. The AASPI notes are bonus context for students and practitioners already working within the AASPI environment.
 
-More information about AASPI and its software tools: [aaspi.ou.edu](https://www.ou.edu/mcee/labs/aaspi)
+More information about AASPI and its software tools (and if you want to try it!): [aaspi.ou.edu](https://www.ou.edu/mcee/labs/aaspi)
 
 ---
 
@@ -105,7 +104,7 @@ Feedback, suggestions, and stories all welcome.
 
 If you use this tool in research, teaching, or a publication, please cite it as:
 
-> Bedle, H. (2025). *Seismic Multi-Attribute ML Uncertainty Assessment Tool*, v1.0. AASPI, University of Oklahoma. https://hbedle-subsurface.github.io/seismic-ml-assessment/
+> Bedle, H. (2025). *Seismic Multi-Attribute ML Uncertainty Assessment Tool*, v1.0., 2026, AASPI, University of Oklahoma. https://hbedle-subsurface.github.io/seismic-ml-assessment/
 
 ---
 
@@ -119,5 +118,5 @@ You are free to share and adapt this tool provided you give appropriate credit a
 
 ## Acknowledgments
 
-Developed at the Allied Geophysics Lab (AASPI), University of Oklahoma, School of Geosciences.  
+Developed at the Attribute Assisted Seismic Processing & Interpretation (AASPI), University of Oklahoma, School of Geosciences.  
 Built with input from AASPI students and the broader seismic interpretation community.
