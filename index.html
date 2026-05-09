@@ -136,7 +136,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);m
 .improve-card{border-radius:10px;margin-bottom:10px;overflow:hidden;border:1px solid var(--border)}
 .improve-card-header{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--cream)}
 .improve-sev{font-family:'DM Mono',monospace;font-size:10px;padding:2px 7px;border-radius:3px;font-weight:500;flex-shrink:0}
-.improve-q{font-size:12px;font-weight:500;color:var(--ink)}
+.improve-q{font-size:12px;font-weight:500;color:var(--ink);line-height:1.5;flex:1}
 .improve-body{padding:10px 14px;font-size:13px;line-height:1.7;color:var(--ink-mid)}
 .improve-action{padding:9px 14px;border-top:1px solid var(--border);font-size:12px;color:var(--teal);background:var(--teal-light);line-height:1.6}
 .improve-action strong{color:var(--teal)}
@@ -1291,7 +1291,7 @@ function buildResults(secs) {
       return `<div class="improve-card">
         <div class="improve-card-header">
           <span class="improve-sev" style="background:${sc.bg};color:${sc.c}">${imp.sev.toUpperCase()}</span>
-          <span class="improve-q">${imp.secLabel} - ${imp.qLabel.substring(0,80)}${imp.qLabel.length>80?'...':''}</span>
+          <span class="improve-q">${imp.secLabel} — ${imp.qLabel}</span>
         </div>
         <div class="improve-action"><strong>Action:</strong> ${imp.action}</div>
       </div>`;
