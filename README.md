@@ -107,7 +107,7 @@ Feedback, suggestions, and stories all welcome.
 
 If you use this tool in research, teaching, or a publication, please cite it as:
 
-> Bedle, H. (2025). *Seismic Multi-Attribute ML Uncertainty Assessment Tool*, v1.0., 2026, AASPI, University of Oklahoma. https://hbedle-subsurface.github.io/seismic-ml-assessment/
+> Bedle, H.; Lubo Robles, D.; Moreno- Ward, A., H. Putra (2026). *Seismic Multi-Attribute ML Uncertainty Assessment Tool*, v1.0., AASPI, University of Oklahoma. https://hbedle-subsurface.github.io/seismic-ml-assessment/
 
 ---
 
