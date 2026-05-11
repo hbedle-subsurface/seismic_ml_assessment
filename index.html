@@ -576,14 +576,14 @@ const SECTIONS = [
        {v:4,t:"I haven't thought about attribute type diversity - selected attributes without considering what physical property each measures"}
      ], dk:false
     },
-    {id:"redundancy", w:3, q:"Did you check whether any of your input attributes are highly correlated with each other - effectively measuring the same property twice or more?",
-     hint:"Including envelope, RMS amplitude, and reflection strength together does not give the ML three pieces of information - it gives it one piece of information three times, and that property will dominate the result regardless of your intent. PCA is a useful way to reveal redundancy - if you have 15 attributes but only 3 or 4 principal components are needed to explain 90% of the variance, most of your attributes are measuring the same things and the set is largely redundant. Consider reducing to a smaller set of genuinely independent attributes.",
+    {id:"redundancy", w:3, q:"Did you assess your input attributes for redundancy - identifying pairs that are effectively measuring the same property twice?",
+     hint:"There are two types of attribute correlation, and they are not the same problem. Attribute redundancy - where two attributes measure the same physical property - is what you need to avoid. Envelope and RMS amplitude are both energy measures; including both gives the ML one piece of information twice and biases the result toward amplitude. Geologic correlation - where two different attributes both respond to the same geology - is expected and acceptable. To identify redundancy, use Pearson correlation for linear relationships, Spearman rank correlation for monotonic relationships, or mutual information for nonlinear dependencies. Correlations above roughly 0.8-0.9 in magnitude warrant scrutiny - ask whether both attributes are truly needed or whether one can be dropped without losing geologic information. PCA is also useful: if 15 attributes reduce to 3-4 principal components explaining 90% of variance, the set is largely redundant.",
      aaspi:"Run the PCA tab in analyze_input to examine the eigenvalue spectrum. If the first 1-2 principal components capture >80% of variance, most of your attributes are redundant.",
      opts:[
-       {v:1,t:"Yes - checked for redundancy using PCA, crossplots, or correlation analysis and confirmed attributes are largely independent"},
-       {v:2,t:"Informally checked - attributes appear to measure different properties based on visual inspection and experience"},
-       {v:3,t:"Not checked - some attributes may be correlated but the extent is unknown"},
-       {v:4,t:"Not considered - multiple attributes of the same type included without redundancy review"}
+       {v:1,t:"Yes - checked for attribute redundancy using correlation analysis (Pearson, Spearman, or mutual information) or PCA; removed or justified highly correlated pairs"},
+       {v:2,t:"Informal check only - reviewed attribute crossplots or histograms but no systematic redundancy analysis"},
+       {v:3,t:"Not checked - attributes selected by experience or convention without redundancy assessment"},
+       {v:4,t:"Not considered - multiple attributes of the same type included without any redundancy review"}
      ], dk:false
     },
     {id:"cyclical", w:3, q:"Does your input set include any cyclical attributes - such as instantaneous phase, dip azimuth, or similar - and if so, were they properly transformed before use?",
